@@ -26,15 +26,17 @@ listaOrdem.addEventListener('change', (event) => {
 const listaProduto = (id, titulo, preco, img) => {
     const infoProduto = document.createElement('div');
     const imagem = document.createElement('img');
-    const tituloProduto = document.createElement('h3');
+    const tituloProduto = document.createElement('h2');
     const precoProduto = document.createElement('div');
 
-    infoProduto.className = 'col-md-3';
-    preco = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(preco)
+    infoProduto.classList.add('col-md-3');
+    infoProduto.classList.add('info-produto');
+    preco = Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(preco);
     imagem.src = img;
     imagem.classList.add('rounded');
-    imagem.classList.add('img_produto')
-    tituloProduto.innerHTML = truncate(titulo, 30);
+    imagem.classList.add('img_produto');
+    imagem.classList.add('img-fluid');
+    tituloProduto.innerHTML = truncate(titulo, 40);
     tituloProduto.className = "desc_produto";
     precoProduto.innerText = preco;
     precoProduto.className = 'preco_produto';
