@@ -36,7 +36,7 @@ const listaProduto = (id, titulo, preco, img) => {
     imagem.classList.add('rounded');
     imagem.classList.add('img_produto');
     imagem.classList.add('img-fluid');
-    tituloProduto.innerHTML = truncate(titulo, 40);
+    tituloProduto.innerHTML = titulo.slice(0, 30) + '...'; //truncate(titulo, 35);
     tituloProduto.className = "desc_produto";
     precoProduto.innerText = preco;
     precoProduto.className = 'preco_produto';
