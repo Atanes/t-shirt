@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     /*outline: thin solid blue;*/
 }
@@ -66,6 +66,7 @@ body {
     text-align: center;
     padding-top: 220px;
     line-height: 1em;
+    margin-top: 10px;
 }
 
 #fundo h1,
@@ -218,12 +219,17 @@ div.desc {
     text-align: center;
 }
 
+nav {
+    border-radius: 3px;
+}
+
 footer {
     font-size: 14px;
     background-color: rgb(38, 38, 38);
     line-height: 1.2em;
     padding: 5px;
     margin-top: 20px;
+    border-radius: 3px;
 }
 
 footer h3 {
